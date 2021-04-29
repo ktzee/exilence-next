@@ -1,6 +1,6 @@
 {
   "name": "exilence-next-app",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -68,7 +68,7 @@
     "react-test": "react-scripts test --env=jsdom",
     "react-eject": "react-scripts eject",
     "electron-build": "electron-builder",
-    "release": "npm run react-build && electron-builder",
+    "release": "npm run react-build",
     "build": "npm run react-build && npm run electron-build",
     "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
     "eslint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
